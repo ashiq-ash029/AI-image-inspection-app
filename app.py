@@ -11,7 +11,7 @@ from PIL import Image, ImageOps
 from ultralytics import YOLO
 
 
-st.set_page_config(page_title="AI Image Inspection", page_icon="🔎", layout="wide")
+st.set_page_config(page_title="ASHIQ SMART IMAGE INSPECTION", page_icon="🔎", layout="wide")
 
 
 @st.cache_resource
@@ -20,7 +20,7 @@ def load_model():
     return YOLO("yolo11n.pt")
 
 
-st.title("🔎 AI Image Inspection Tool")
+st.title("🔎 ASHIQ SMART IMAGE INSPECTION Tool")
 st.caption("Invendo AI Academy • Beginner Computer Vision Project")
 st.write(
     "Upload a photograph. The AI model will find common objects, "
@@ -28,7 +28,7 @@ st.write(
 )
 
 threshold = st.slider(
-    "Minimum confidence", min_value=0.10, max_value=0.90, value=0.30, step=0.05
+    "Minimum confidence", min_value=0.10, max_value=0.90, value=0.30, step=0.01
 )
 uploaded_file = st.file_uploader("Upload a JPG or PNG image", type=["jpg", "jpeg", "png"])
 
