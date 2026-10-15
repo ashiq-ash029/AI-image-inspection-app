@@ -1,0 +1,25 @@
+# Local Python environments and cache
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Downloaded model weights (automatically fetched on first run)
+*.pt
+*.onnx
+
+# Private images, reports, and other local student outputs
+uploads/
+outputs/
+*.csv
+
+# Local app settings and secrets
+.streamlit/secrets.toml
+.env
+.env.*
+
+# Editor/system files
+.vscode/
+.DS_Store
+Thumbs.db
